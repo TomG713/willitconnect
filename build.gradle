@@ -63,4 +63,4 @@ task wrapper(type: Wrapper) {
 
 project.tasks.processResources.dependsOn('npmInstall')
 project.tasks.processResources.dependsOn('webpack')
-project.tasks.processResources.dependsOn('jest')
+//project.tasks.processResources.dependsOn('jest')

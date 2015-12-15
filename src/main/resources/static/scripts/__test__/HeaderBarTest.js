@@ -14,7 +14,7 @@ describe('HeaderBar', () => {
         var headerbar = TestUtils.renderIntoDocument(<HeaderBar />);
         var href = TestUtils.scryRenderedDOMComponentsWithTag(headerbar, 'a')[1];
 
-        expect((href.getAttribute('href')) === 'https://github.com/krujos/willitconnect');
+        expect(href.getAttribute('href')).toEqual('https://github.com/krujos/willitconnect');
     });
 });
 
