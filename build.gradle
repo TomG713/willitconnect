@@ -70,10 +70,6 @@ eclipse {
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '3.4.1'
-}
-
 project.tasks.processResources.dependsOn('npmInstall')
 project.tasks.processResources.dependsOn('webpack')
 project.tasks.test.dependsOn('karma')
